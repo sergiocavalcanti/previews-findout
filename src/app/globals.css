@@ -1,17 +1,48 @@
 /* variables */
 
 :root {
+  --dark-blue: #063f6c;
+  --light-blue: #049de8;
+  --accent-color: #dedacc;
   
+  --logo-size: 68px;
+  --logo-footer-size: 48px;
+
+  --nav-text-size: 28px;
+
+  --cta-text-size: 64px;
+  --cta-subtext-size: 32px;
+
+  --title: 48px;
+  --subtitle: 24px;
+}
+
+.slick-slider {
+  line-height: 0;
 }
 
 @media screen and (max-width: 768px) {
   :root {
 
+    --nav-text-size: 16px;
+    --logo-size: 40px;
+    --logo-footer-size: 20px;
+
+    --cta-text-size: 32px;
+    --cta-subtext-size: 18px;
   }
 }
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

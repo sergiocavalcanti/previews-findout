@@ -1,0 +1,32 @@
+.footer{
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.top{
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-myriad);
+  font-size: var(--nav-text-size);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo{
+  width: var(--logo-footer-size);
+  height: var(--logo-footer-size);
+}
+
+@media screen and (max-width: 768px) {
+  
+}

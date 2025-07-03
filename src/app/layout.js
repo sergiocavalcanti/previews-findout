@@ -1,13 +1,79 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Numans, Raleway, } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
+const myriadPro = localFont({
+  src: [
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-REGULAR.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-BOLD.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-BOLDIT.otf',
+      weight: '700',
+      style: 'italic',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-BOLDCOND.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-BOLDCONDIT.otf',
+      weight: '700',
+      style: 'italic',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-COND.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-CONDIT.otf',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../fonts/myriad-pro/MyriadPro-Light.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-SEMIBOLD.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/myriad-pro/MYRIADPRO-SEMIBOLDIT.otf',
+      weight: '600',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-myriad',
+  display: 'swap',
+})
+
+const numans = Numans({
+  variable: "--font-numans",
+  weight: "400",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
 });
 
@@ -19,8 +85,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${numans.variable} ${raleway.variable} ${myriadPro.variable}`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

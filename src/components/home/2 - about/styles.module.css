@@ -1,0 +1,21 @@
+.container{
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.content{
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+  
