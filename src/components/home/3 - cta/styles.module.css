@@ -1,0 +1,40 @@
+.container{
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("/images/cta4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content{
+  position: relative;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.ctaText{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: white;
+  text-align: center;
+
+  font-family: var(--font-myriad);
+  font-size: var(--cta-text-size);
+  color: var(--dark-blue);
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+  

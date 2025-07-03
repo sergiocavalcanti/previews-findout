@@ -10,7 +10,7 @@ const index = () => {
 
         <ul className={styles.nav}>
           <li><a href="/">Cursos</a></li>
-          <li><a href="/">Contato</a></li>
+          <li><a href="/#contato">Contato</a></li>
           <li><a href="/">Matricule-se</a></li>
         </ul>
         
