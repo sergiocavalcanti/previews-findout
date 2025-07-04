@@ -1,7 +1,14 @@
+'use client'
+
 import React from 'react'
 import styles from './styles.module.css'
 
+import { usePathname } from 'next/navigation';
+
 const index = () => {
+
+  const pathname = usePathname();
+
   return (
     <div className={styles.header}>
       <div className={styles.container}>
@@ -9,7 +16,7 @@ const index = () => {
         <a href="/"><img className={styles.logo} src="/logos/logo.svg" alt="Logo" /></a>
 
         <ul className={styles.nav}>
-          <li><a href="/">Cursos</a></li>
+          <li><a className={(pathname == '/cursos' ? styles.active : '')} href="/cursos">Cursos</a></li>
           <li><a href="/#contato">Contato</a></li>
           <li><a href="/">Matricule-se</a></li>
         </ul>

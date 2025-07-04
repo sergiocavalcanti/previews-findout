@@ -1,0 +1,202 @@
+@keyframes transition {
+  from {
+    padding-left: 5%;
+    margin-left: -20%;
+  }
+  to {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+.container{
+  position: relative;
+  overflow: hidden;
+}
+
+.content{
+  position: relative;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.hero {
+  display: flex;
+  height: calc(100vh - 112px - 72px);
+  overflow: hidden;
+}
+
+/* Fatias */
+.slice {
+  flex: 1;
+  position: relative;
+  transition: flex 0.5s ease, clip-path 0.5s ease; /* Include clip-path in the transition */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  --clip-angle: 15deg; /* Define the desired angle here */
+  --clip-end-x: calc(100% - (100vh * tan(var(--clip-angle))));
+  clip-path: polygon(0 0, 100% 0, var(--clip-end-x) 100%, 0% 100%);
+}
+
+/* Adjust clip-path on hover */
+.slice:hover {
+  --clip-end-x: calc(100% - (100vh * tan(var(--clip-angle))));
+  clip-path: polygon(0 0, 100% 0, var(--clip-end-x) 100%, 0% 100%);
+}
+.hero:not(:hover) .slice-1 {
+  flex: 3;
+  --clip-end-x: calc(100% - (100vh * tan(var(--clip-angle))));
+  clip-path: polygon(0 0, 100% 0, var(--clip-end-x) 100%, 0% 100%);
+}
+.hero:not(:hover) .slice-1 .overlay{
+    opacity: 1;
+    pointer-events: auto; /* Enable interaction with the overlay */
+}
+
+/* Imagens */
+.slice-1 {
+  background-image: url('/images/square1.svg');
+  background-position: bottom;
+  flex: 3; /* Fica expandida inicialmente */
+  z-index: 3;
+}
+.slice-2 {
+  background-image: url('/images/square2.svg');
+  margin-left: -20%;
+  z-index: 2;
+}
+.slice-3 {
+  background-image: url('/images/square3.svg');
+  margin-left: -20%;
+  z-index: 1;
+  --clip-angle: 0deg; /* Define the desired angle here */
+}
+
+.active {
+  animation: 0.5s ease-in-out transition;
+  --clip-angle: 0deg; 
+  z-index: 4;
+  padding: 0px;
+  margin: 0px;
+}
+.active .overlay {
+  margin: auto !important;  
+}
+.inactive {
+  --clip-angle: 0deg;
+  flex: 0 !important;
+  z-index: 0;
+  width: 0%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Overlay (título + botão) */
+
+.overlay {
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  max-width: 500px;
+  pointer-events: none;
+  text-align: center;
+}
+.slice-1 .overlay{
+  margin: auto auto auto 20%;
+}
+.slice-2 .overlay{
+  margin: auto;
+}
+.slice-3 .overlay{
+  margin: auto 20% auto auto;
+}
+
+.overlay h2 {
+  font-size: var(--title);
+  font-family: var(--font-myriad);
+  margin-bottom: 1rem;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 1rem 0;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: white;
+  color: var(--dark-blue);
+  font-size: var(--subtitle);
+  transition: ease-in-out 0.3s;
+  pointer-events: auto;
+}
+
+.overlay button:hover {
+  background-color: var(--dark-blue);
+  color: white;
+  border: 1px solid white;
+}
+
+
+.slice {
+  flex: 1;
+  transition: flex 0.5s ease, filter 0.3s ease;
+}
+
+/* Quando slice-1 é hover */
+.slice-1:hover {
+  flex: 3;
+  
+}
+.slice-1:hover ~ .slice-2,
+.slice-1:hover ~ .slice-3 {
+  flex: 1;
+}
+
+/* Quando slice-2 é hover */
+.slice-2:hover {
+  flex: 3;
+}
+.slice-2:hover ~ .slice-3 {
+  flex: 1;
+}
+.slice-2:hover ~ .slice-3,
+.hero .slice-1:hover ~ .slice-2 {
+  flex: 1;
+}
+.hero .slice-2:hover ~ .slice-1 {
+  flex: 1;
+}
+
+/* Quando slice-3 é hover */
+.slice-3:hover {
+  flex: 3;
+}
+.hero .slice-3:hover ~ .slice {
+  flex: 1;
+}
+.hero .slice-3:hover ~ .slice-2,
+.hero .slice-3:hover ~ .slice-1 {
+  flex: 1;
+}
+
+.slice:hover .overlay {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+}
+  

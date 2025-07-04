@@ -1,0 +1,172 @@
+@keyframes start {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.container{
+  position: relative;
+  overflow: hidden;
+
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  animation: 1s ease-in-out start;
+}
+
+.nav, .reviews{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 320px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+/* nav configs */
+
+.nav{
+  justify-content: center;
+}
+.nav button{
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: #D5D5D540;
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: var(--subtitle);
+  font-family: var(--font-myriad);
+  text-align: center;
+  transition: ease-in-out 0.3s;
+}
+.nav button:hover{
+  background-color: white;
+  color: var(--dark-blue);
+  border: 1px solid white;
+}
+
+
+/* reviews configs */
+
+.reviews{
+  font-family: var(--font-raleway);
+  color: var(--dark-blue);
+
+  padding: 20px 30px;
+  border-radius: 50px;
+  background-color: #ffffff60;
+  backdrop-filter: blur(4px);
+  height: fit-content;
+}
+
+.reviews span{
+  color: white;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.reviews h3, .reviews span{
+  font-size: var(--text-size);
+}
+.reviews p{
+  font-size: var(--text-size-small);
+}
+.reviews h3, .reviews p{
+  margin: 0;
+}
+
+.review{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ocupation{
+  font-weight: bold;
+}
+
+
+/* details configs */
+
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  color: white;
+}
+
+.details .title{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.details h2, .details h3{
+  margin: 0;
+  font-family: var(--font-myriad);
+}
+.details h2{
+  font-size: var(--cta-text-size);
+}
+.details h3{
+  font-size: var(--subtitle);
+  padding: 0px 120px;
+}
+
+.details button{
+  width: 80%;
+  margin: auto;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: white;
+  color: var(--dark-blue);
+  font-size: var(--subtitle);
+  font-family: var(--font-myriad);
+  transition: ease-in-out 0.3s;
+}
+.details button:hover{
+  background-color: var(--dark-blue);
+  color: white;
+  border: 1px solid white;
+}
+
+.details p{
+  width: 80%;
+  margin: auto;
+  font-size: var(--text-size);
+  font-family: var(--font-raleway);
+  font-weight: bold;
+}
+
+.details .points{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+  

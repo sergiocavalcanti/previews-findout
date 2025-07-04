@@ -33,6 +33,7 @@
   font-family: var(--font-myriad);
   color: var(--dark-blue);
   text-align: center;
+  margin: auto;
 }
 
 .contactForm .formGroup {
