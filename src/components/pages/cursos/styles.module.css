@@ -157,7 +157,6 @@
 /* Quando slice-1 é hover */
 .slice-1:hover {
   flex: 3;
-  
 }
 .slice-1:hover ~ .slice-2,
 .slice-1:hover ~ .slice-3 {
@@ -197,6 +196,48 @@
 
 
 @media screen and (max-width: 768px) {
+  .hero{
+    height: calc(100vh - 84px - 44px);
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0px;
+  }
+
+  .slice{
+    --clip-angle: 0deg; /* Define the desired angle here */
+    padding: 0%;
+    margin: 0%;
+    height: calc(33% - 7px);
+  }
+  .slice:hover{
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+  }
+  .hero:not(:hover) .slice-1 {
+    flex: 1;
+  }
+
+  .overlay {
+    opacity: 1;
+    text-align: center;
+    max-width: 230px;
+    padding: 0px 10px;
+  }
+  .slice-1 .overlay, .slice-2 .overlay, .slice-3 .overlay{
+    margin: auto;
+  }
+  
+  .overlay h2 {
+    font-size: 26px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+  .overlay button {
+    font-size: 16px;
+  }
+
   
 }
   

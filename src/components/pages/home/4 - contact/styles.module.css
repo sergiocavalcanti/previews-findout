@@ -67,6 +67,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  
+  .content img{
+    display: none;
+  }
+
+  .contactForm{
+    width: auto;
+  }
 }
   

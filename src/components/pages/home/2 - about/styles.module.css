@@ -16,6 +16,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  
+  .content{
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
 }
   
