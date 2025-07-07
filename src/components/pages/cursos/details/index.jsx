@@ -35,7 +35,7 @@ const detalhes = [
   },
   {
     id: 2,
-    title: "Emergências Médicas",
+    title: "Emergências Médicas 2",
     subtitle: "Imersão em Avaliação Pré-Clínica e Manejo de Emergências Médicas em Odontopediatria (EMODPED) (MEC)",
     description: "Lorem ipsum dolor sit amet consectetur. Nisi diam vel eleifend malesuada turpis. Viverra ut metus arcu pulvinar nisi id tellus. Arcu habitant elementum lorem erat. Congue tristique vel suspendisse eu elit blandit sed nibh. Lorem ipsum dolor sit amet consectetur. Nisi diam vel eleifend malesuada turpis. Viverra ut metus arcu pulvinar nisi id tellus. Arcu habitant elementum lorem erat. Congue tristique vel suspendisse eu elit blandit sed nibh.",
     points: [
@@ -115,7 +115,10 @@ const index = (props) => {
 
         <div className={styles.points}>
           {detalhes[props.curso - 1].points.map((point, index) => (
-            <p key={index}><FontAwesomeIcon icon={faAsterisk} /> {point}</p>
+            <div className={styles.point} key={index}>
+              <FontAwesomeIcon icon={faAsterisk} /> 
+              <p>{point}</p>
+            </div>
           ))}
         </div>
       </div>

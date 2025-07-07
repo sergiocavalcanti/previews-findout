@@ -15,7 +15,7 @@ const index = () => {
   return (
     <div className={styles.container}>
 
-      <section className={styles.hero}>
+      <section className={`${styles.hero} ${curso != 0 ? styles.mobile : ''}`}>
         <div className={`${styles.slice} ${styles['slice-1']} ${curso == 1 ? styles.active : ''} ${curso !== 1 && curso !== 0 ? styles.inactive : ''}`} >
           {curso == 1 ?  
             <Details curso={curso} setCurso={setCurso} />
@@ -31,7 +31,7 @@ const index = () => {
             <Details curso={curso} setCurso={setCurso} />
           :
             <div className={styles.overlay}>
-              <h2><span className={styles.check}><FontAwesomeIcon icon={faCheck} /></span> Emergências Médicas</h2>
+              <h2><span className={styles.check}><FontAwesomeIcon icon={faCheck} /></span> Emergências Médicas 2</h2>
               <button onClick={() => setCurso(2)}>Saiba mais</button>
             </div>
           }

@@ -1,7 +1,7 @@
 .container{
   position: relative;
   overflow: hidden;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 .content{
@@ -66,13 +66,26 @@
   border: 1px solid white;
 }
 
+.toast{
+  text-align: center;
+  font-family: var(--font-myriad);
+  font-size: 25px;
+  width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
+
+  .container{
+    padding: 20px 10px;
+  }
+
   .content img{
     display: none;
   }
 
   .contactForm{
-    width: auto;
+    width: 90%;
   }
 }
   

@@ -52,3 +52,16 @@ body{
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* toast-custom.css */
+
+.toast-container {
+  font-family: var(--font-myriad);
+}
+
+.toast-body {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 12px;
+}

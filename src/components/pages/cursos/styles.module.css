@@ -199,15 +199,20 @@
   .hero{
     height: calc(100vh - 84px - 44px);
     flex-direction: column;
-    gap: 5px;
-    padding: 5px 0px;
+    justify-content: space-around;
+  }
+
+  .mobile{
+    flex-direction: row;
+    height: auto;
   }
 
   .slice{
     --clip-angle: 0deg; /* Define the desired angle here */
     padding: 0%;
     margin: 0%;
-    height: calc(33% - 7px);
+    max-height: 195px;
+    width: 100%;
   }
   .slice:hover{
     flex: 1;
@@ -238,6 +243,13 @@
     font-size: 16px;
   }
 
+  .active {
+    max-height: none;
+  }
+
+  .inactive {
+    display: none;
+  }
   
 }
   

@@ -164,9 +164,78 @@
   flex-direction: column;
   gap: 10px;
   font-weight: bold;
+  width: 80%;
+  margin: auto;
+}
+
+.point{
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  font-size: var(--text-size);
+}
+
+.point p{
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
+  .container{
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 20px;
+  }
+
+  .nav, .reviews, .details{
+    width: 90%;
+    margin: auto;
+  }
+
+  /* nav styles */
+
+  .nav{
+    order: 3;
+  }
+
+  /* reviews styles */
+
+  .reviews{
+    order: 2;
+    padding: 10px 0px;
+    gap: 0px;
+  }
+
+  .review {
+    padding: 15px;
+  }
+
+  /* details styles */
+
+  .details{
+    order: 1;
+  }
+
+  .title h2{
+    max-width: 250px;
+    margin: auto;
+  }
+  .title h3{
+    padding: 0px;
+  }
+
+  .details button{
+    width: 100%;
+  }
+
+  .details p{
+    width: 100%;
+  }
+
+  .details .points{
+    width: 100%;
+  }
   
+  
+
 }
   
