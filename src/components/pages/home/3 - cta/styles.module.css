@@ -38,5 +38,9 @@
   .content{
     height: 350px;
   }
+
+  .ctaText{
+    font-size: 25px;
+  }
 }
   

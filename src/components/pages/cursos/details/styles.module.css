@@ -218,9 +218,11 @@
   .title h2{
     max-width: 250px;
     margin: auto;
+    font-size: 26px;
   }
   .title h3{
     padding: 0px;
+    font-size: 20px;
   }
 
   .details button{
