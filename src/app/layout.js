@@ -12,52 +12,52 @@ import Footer from "@/components/other/footer";
 const myriadPro = localFont({
   src: [
     {
-      path: '../fonts/myriad-pro/myriadpro-regular.otf',
+      path: './fonts/myriadpro-regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/myriadpro-bold.otf',
+      path: './fonts/myriadpro-bold.otf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/myriadpro-boldit.otf',
+      path: './fonts/myriadpro-boldit.otf',
+      weight: '700',
+      style: 'italic',
+    },
+    // {
+    //   path: './fonts/myriadpro-boldcond.otf',
+    //   weight: '700',
+    //   style: 'normal',
+    // },
+    {
+      path: './fonts/myriadpro-boldcondit.otf',
       weight: '700',
       style: 'italic',
     },
     {
-      path: '../fonts/myriad-pro/myriadpro-boldcond.otf',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/myriad-pro/myriadpro-boldcondit.otf',
-      weight: '700',
-      style: 'italic',
-    },
-    {
-      path: '../fonts/myriad-pro/myriadpro-cond.otf',
+      path: './fonts/myriadpro-cond.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/myriadpro-condit.otf',
+      path: './fonts/myriadpro-condit.otf',
       weight: '400',
       style: 'italic',
     },
     {
-      path: '../fonts/myriad-pro/myriadpro-light.otf',
+      path: './fonts/myriadpro-light.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/myriadpro-semibold.otf',
+      path: './fonts/myriadpro-semibold.otf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/myriadpro-semiboldit.otf',
+      path: './fonts/myriadpro-semiboldit.otf',
       weight: '600',
       style: 'italic',
     },
@@ -82,8 +82,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata = {
   title: "MRCare",
-  description: "Vídeomaker mobile",
-  keywords: "Juliana Ilha, Soul Juliana, Soul, Juliana, vídeomaker mobile, vídeomaker, mobile",
+  description: "Cursos Odontológicos",
+  keywords: "-",
 };
 
 export default function RootLayout({ children }) {
