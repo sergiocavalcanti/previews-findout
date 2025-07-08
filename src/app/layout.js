@@ -12,52 +12,52 @@ import Footer from "@/components/other/footer";
 const myriadPro = localFont({
   src: [
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-REGULAR.otf',
+      path: '../fonts/myriad-pro/myriadpro-regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-BOLD.otf',
+      path: '../fonts/myriad-pro/myriadpro-bold.otf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-BOLDIT.otf',
+      path: '../fonts/myriad-pro/myriadpro-boldit.otf',
       weight: '700',
       style: 'italic',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-BOLDCOND.otf',
+      path: '../fonts/myriad-pro/myriadpro-boldcond.otf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-BOLDCONDIT.otf',
+      path: '../fonts/myriad-pro/myriadpro-boldcondit.otf',
       weight: '700',
       style: 'italic',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-COND.otf',
+      path: '../fonts/myriad-pro/myriadpro-cond.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-CONDIT.otf',
+      path: '../fonts/myriad-pro/myriadpro-condit.otf',
       weight: '400',
       style: 'italic',
     },
     {
-      path: '../fonts/myriad-pro/MyriadPro-Light.otf',
+      path: '../fonts/myriad-pro/myriadpro-light.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-SEMIBOLD.otf',
+      path: '../fonts/myriad-pro/myriadpro-semibold.otf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: '../fonts/myriad-pro/MYRIADPRO-SEMIBOLDIT.otf',
+      path: '../fonts/myriad-pro/myriadpro-semiboldit.otf',
       weight: '600',
       style: 'italic',
     },
