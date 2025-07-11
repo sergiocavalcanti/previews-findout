@@ -27,7 +27,8 @@
 
 .hero {
   display: flex;
-  height: calc(100vh - 112px - 72px);
+  /* height: calc(100vh - 112px - 72px); */
+  height: calc(100vh - 112px);
   overflow: hidden;
 }
 
@@ -197,7 +198,8 @@
 
 @media screen and (max-width: 768px) {
   .hero{
-    height: calc(100vh - 84px - 44px);
+    /* height: calc(100vh - 84px - 44px); */
+    height: calc(100vh - 84px);
     flex-direction: column;
     justify-content: space-around;
   }

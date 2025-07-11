@@ -8,9 +8,9 @@ const index = (props) => {
 
       <div className={styles.overlay}>
         <div className={styles.overlayContent}>
+          <img className={styles.professor} src="/logos/logo.svg" alt={props.title} />
           <h3>{props.title}</h3>
           <p>{props.description}</p>
-          <a href="/cursos" className={styles.button}>Detalhes</a>
         </div>
       </div>
     </div>

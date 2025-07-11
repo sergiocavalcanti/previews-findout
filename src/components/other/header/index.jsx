@@ -16,7 +16,6 @@ const index = () => {
         <a href="/"><img className={styles.logo} src="/logos/logo.svg" alt="Logo" /></a>
 
         <ul className={styles.nav}>
-          <li><a className={(pathname == '/cursos' ? styles.active : '')} href="/cursos">Cursos</a></li>
           <li><a href="/#contato">Contato</a></li>
           <li><a href="/">Matricule-se</a></li>
         </ul>
