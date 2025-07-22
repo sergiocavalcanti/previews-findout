@@ -7,13 +7,15 @@ const index = () => {
   const professores = [
     {
       id: 1,
-      title: "Professor 1",
+      title: "Profª Dra. Juliana Ramacciato",
+      photo: "/images/Professor1.svg",
       description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
       image: "/images/curso1.svg"
     },
     {
       id: 2,
       title: "Professor 2",
+      photo: "/logos/logo.svg",
       description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
       image: "/images/curso3.svg"
     }
